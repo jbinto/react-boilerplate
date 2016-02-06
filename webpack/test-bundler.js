@@ -17,7 +17,7 @@ global.should = chai.should();
 // Require Tests
 // ---------------------------------------
 // require all `tests/**/*.test.js`
-const testsContext = require.context('../', true, /\.test\.js$/);
+const testsContext = require.context('../app', true, /\.test\.js$/);
 testsContext.keys().forEach(testsContext);
 
 // // require all `src/**/*.js` except for `main.js` (for isparta coverage reporting)
