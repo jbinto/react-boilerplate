@@ -18,7 +18,8 @@ module.exports = {
         loader: 'babel',
         exclude: [/node_modules/],
         query: {
-          plugins: ['babel-plugin-rewire']
+          plugins: ['babel-plugin-rewire'],
+          presets: ['es2015', 'react', 'stage-0']
         }
       },
     ]
